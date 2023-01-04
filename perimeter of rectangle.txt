@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    float h,w,perimeter;
+    printf("enter the height:\nenter the width:\n");
+    scanf("%f%f",&h,&w);
+    perimeter = 2*(h+w);
+    printf("perimeter=%f\n",perimeter);
+ 
+    return 0;
+}

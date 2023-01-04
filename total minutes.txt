@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main()
+{
+int hour,minute,total;
+scanf("%d%d",&hour,&minute);
+total=hour*60+minute;
+printf("total minute=%d",total);
+}

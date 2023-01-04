@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    float kmph,miph;
+    scanf("%f",&kmph);
+    miph = (kmph * 0.6213712);
+	printf("%f miles per hour\n", miph);
+}
