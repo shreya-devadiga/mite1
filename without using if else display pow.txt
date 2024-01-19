@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main
+
+    {
+        public static void main(String[] args){
+            Scanner s=new Scanner(System.in);
+            double a=s.nextDouble();
+            double b=s.nextDouble();
+            double x;
+            x=Math.pow(Math.max(a,b),Math.min(a,b));
+           System.out.println(x);
+        }
+    }
