@@ -1,0 +1,20 @@
+Q1.given an int n,return the absolutedifference between n and 21,except return double the absolute difference if n is over 21.
+
+
+import java.util.Scanner;
+public class Main
+
+    {
+        static int diff21(int n){
+            int x;
+            x=(n<21)?(Math.abs(n-21)):(2*Math.abs(n-21));
+            return x;
+        }
+        public static void main(String[] args){
+           Scanner s=new Scanner(System.in);
+           int a,b;
+           a=s.nextInt();
+           b=diff21(a);
+           System.out.println(b);
+        }
+    }
