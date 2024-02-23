@@ -1,0 +1,30 @@
+import java.util.*;
+class FindMissingAndDuplicate {
+static void findMissingAndDuplicate(int[] arr) {
+int n = arr.length;
+int[] count = new int[n + 1];
+int missing = -1;
+int duplicate = -1;
+for (int i = 0; i &lt; n; i++) {
+count[arr[i]]++; }
+for (int i = 1; i &lt;= n; i++) {
+if (count[i] == 0) {
+missing = i;
+} else if (count[i] == 2) {
+duplicate = i;
+} }
+System.out.println(&quot;Duplicate: &quot; + duplicate);
+System.out.println(&quot;Missing: &quot; + missing); }
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.print(&quot;Enter the size of the array: &quot;);
+int size = scanner.nextInt();
+int[] arr = new int[size];
+System.out.println(&quot;Enter the elements of the array:&quot;);
+for (int i = 0; i &lt; size; i++) {
+arr[i] = scanner.nextInt();
+}
+findMissingAndDuplicate(arr);
+scanner.close();
+}
+}
